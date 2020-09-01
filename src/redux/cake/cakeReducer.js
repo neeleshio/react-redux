@@ -1,4 +1,4 @@
-const { BUY_CAKES } = require("./cakeTypes")
+const { BUY_CAKE } = require("./cakeTypes")
 
 const initialState = {
     numOfCakes: 10
@@ -6,7 +6,7 @@ const initialState = {
 
 const cakeReducer = (state = initialState, action) => {
     switch (action.type) {
-        case BUY_CAKES: return {
+        case BUY_CAKE: return {
             ...state,
             numOfCakes: state.numOfCakes - 1
         }
