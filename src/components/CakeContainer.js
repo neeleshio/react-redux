@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 function CakeContainer(props) {
     return (
         <div>
-            <h2>Number of Cakes - {props.numOfCakes}</h2>
+            <h2>Number of Cakes : <span>{props.numOfCakes}</span></h2>
             <button onClick={props.buyCake}>Buy Cake</button>
         </div>
     )
@@ -13,7 +13,7 @@ function CakeContainer(props) {
 
 const mapStateToProps = state => {
     return {
-        numOfCakes: state.numOfCakes
+        numOfCakes: state.cake.numOfCakes
     }
 }
 
